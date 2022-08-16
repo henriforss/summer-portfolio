@@ -7,8 +7,8 @@
 body {
   display: block;
   margin: 20px auto;
-  width: 360px;
-  /* border: 1px solid black; */
+  width: 356px;
+  border: 0px solid black;
 }
 
 h1 {
@@ -41,15 +41,16 @@ iframe {
 }
 
 #app2 {
-  height: 340px;
+  height: 315px;
 }
 
 #app3 {
-  height: 340px;
+  height: 290px;
 }
 
 #app4 {
-  height: 840px;
+  height: 786px;
+  
 }
 
 #app5 {
@@ -57,5 +58,5 @@ iframe {
 }
 
 #app6 {
-  height: 500px;
+  height: 470px;
 }
