@@ -1,0 +1,66 @@
+otsikko
+
+
+ingressi
+
+
+Kesäkuun alussa 2022 asetin itselleni haasteen: luo datajournalistinen front-end portfolio elokuun loppuun mennessä. Tämä tuntui minusta mielenkiintoiselta projektilta kun olen työskennellyt 15 vuotta journalismin parissa.
+
+Helpottaakseni tehtävää päätin tietyistä rajauksista. Päätin keskittyä vain kaikista olennaisimpaan toimivuuteen ja siihen että työ valmistuu aikarajan sisällä. Rajauksen ulkopuolelle jäi siis monia tärkeitä asioita kuten saavutettavuus, back-end, testaus etc. Päätin projektin aikan myös rajata portfoliosivun leveyden 350 pikseliin, jotta se näyttäisi hyvältä mobiilissa.
+
+Portfolioon kuuluvat appit esitellään siinä järjestyksessä jossa ne on luotu. Ensimmäiset ovat aika yksinkertaisia, mutta loppua kohden vaikeustaso nousee. Noin henkilökohtaisesti olen aika tyytyväinen moniin niistä :)
+
+(app1)
+
+Tämä appi on itselleni eräänlainen nostalgiatrippi. Urani ensimmäinen datajournalistinen tehtävä oli analysoida ylioppilaskoetuloksia Pythonilla. Myöhemmin päädyimme myös tilaamaan appin jolla lukija pystyi hakemaan uusia ylioppilaita nimen tai lukion perusteella. Se maksoi ainakin pari tonnia. Halusin kokeilla jos osaisin luoda sellaisen itse ja sehän olikin helppoa.
+
+Appi on toteutettu Javascriptillä ja sen idea on pöllitty – anteeksi! - täältä:  https://www.is.fi/kotimaa/art-2000008864277.html. Sen pääasiallinen toimivuus on lukea csv-tiedosto ja filtteröidä tietoa. Siinä esiintyvät nimet ja lukiot ovat keksittyjä.
+
+Koodi ja muut tiedostot löytyvät täältä: https://github.com/henriforss/ylioppilaskokeet-app-js.
+
+(app2)
+
+Seuraava appi tuskin tarvitsee sen enempää esittelyä, kaikenlaiset laskurit ovat datajournalistiikan peruskauraa. Tämän kyseisin laskurin voisi yhdistää esimerkiksi asuntolainojen korkojen noususta kertovaan juttuun. Suurin osa aikuisista ihmisistä ovat joskus käyttäneet tämän tyyppistä appia ja siinä esitetty tieto on hyvin kin relevanttia.
+
+Tässä appissa oleva lainamatematiikka on haettu netistä ja se on toteutettu HTML:n ja Javascriptin avulla. Appin koodi löytyy täältä: https://github.com/henriforss/mortgage-calculator.
+
+(app3)
+
+Kun ensimmäiset kaksi appia olivat valmiita, halusin tehdä jotain muuta. Ennen tätä olin tehnyt datan visualisointia vain Pythonilla. Nyt halusin kokeilla miten se tapahtuu Javascriptillä.
+
+Tämä appi oli alun perin osa eräänlaista mockup-datajournalistista artikkelia jossa tutkittiin rikosten uhreja rikoksen tyypin ja uhrin sukupuolen näkökulmasta. Uhritutkimus on kohtalaisen uusi alue kriminologiassa ja uhreista saatava tieto on vähäistä. Esimerkiksi Tilastokeskusksella on kymmeniä tilastoja jotka koskevat rikosen tekijöitä, mutta vain yksi joka koskee uhreja, ja sekään ei ole täydellinen. Mockup-artikkeli ei kuitenkaan sopinut tähän yhteyteen, niin päätin jättää sen pois, tätä appia lukuun ottamatta.
+
+Tässä työssä hyödynnetään Javascriptin Chart.js kirjastoa ja sen koodi löytyy täältä: https://github.com/henriforss/crime-graph.
+
+(app4)
+
+Chart.js on kätevä kirjasto jos tavoitteena on luoda visualisointeja helposti. Niiden kustomointi onkin sitten vaikeampaa. Siksi päätinkin siirtyä suoraa päätä legendaarisen Mike Bostockin legendaariseen D3.js-kirjastoon joka on ziljoona kertaa parempi.
+
+Yllä oleva kartta on tämän portfolion kehittynein appi. Sen tekemiseen meni kaikista pisin aika ja siihen liittyi paljon testailua ja viritystä. Appissa käytetty karttadata tulee Maanmittauslaitokselta, mutta sitä piti leikata ja käsitellä QGIS-ohjelmassa ennen kuin se soveltui tähän käyttöön. Karttadataan yhdistetty muu data tulee Tilastokeskukselta ja Kuntaliitolta.
+
+Olen henkilökohtaisesti aika tyytyväinen tähän appiin. Siitä löytyy monenlaista toimintoa - zoomia, klikkiä, värikoodia - ja sitä voisi jatkokehittää monella eri tavalla. Koodi ei ole kaikin puolin kaunista, esimerkiksi jos katsoo miten tooltipin x- ja y-koordinaatit määritellään (huh!) , mutta löytyy siitä joitain hienouksiakin (jee!).
+
+Tämä appi on tosiaan toteutettu Javascriptin ja D3.js:n avulla ja sen koodi löytyy täältä: https://github.com/henriforss/d3-finland-map-2.
+
+(app5)
+
+Tykästyin D3.js-kirjastoon sen verran paljon, että halusin jatkaa sen parissa. Jotta seuraava projekti ei olisi täysin samanlainen kuin edellinen, päätin siirtyä Reactin pariin. Olen aikaisemmin koodaillut jonkin verran React-appeja ja ilokseni huomasin että D3.js toimii myös Reactissa kunhan vähän säätää.
+
+Tämän appin pääasiallinen toimivuus on, että se hakee pörssidataa Nasdaqin Data Link API:sta, käsittelee sitä ja esittää sen D3.js:n avulla. Nasdaqin ilmainen data rajoittuu joihinkin amerikkalaisiin yhtiöihin ja kahteen kuukauteen vuonna 2017, ja se tekee tästä appista hieman tylsän, mutta ainakin kaikki toimii.
+
+Tämän tyyppiset talousdatan visualisoinnit kuuluvat olennaisesti datajournalistiikkaan ja tätäkin voisi kehitää monella eri tavalla. Ikävä kyllä desktopin hieno mouseover-funktio ei toimi mobiilissa vaan muuttuu klikiksi. Koodi löytyy täältä: https://github.com/henriforss/stock-market-app.
+
+(app6)
+
+Tässä viimeisessä appissa halusin kokeilla HTML canvasta. Ajattelin että sen avulla voisi tehdä esimerkiksi animoituja otsikkoja tai muita elementtejä jonkin pidemmän reportaasin yhteyteen.
+
+Tämän appin tekeminen oli tosi hauskaa. Siinä tehdään kaikenlaisia pieniä temppuja, jotta sen pyörittäminen mobiilissa olisi mahdollista, esimerkiksi vaihdetaan korkearesoluutioinen kuva heikompilaatuiseen siinä vaiheessa kun käyttäjä klikkaa kuvaa - resetti tuplaklikkaamalla. Lisäksi siinä käytetään Javascriptin luokkia, jotka olivat minulle uusi juttu - tuli ihan Python mieleen.
+
+Myös animaation tekeminen oli hauskaa ja toivonkin että pääsen piakkoin palaamaan sen pariin - ja ehkä hieman nostamaan vaikeusastetta. Sanoiko joku WebGL? Koodi täältä: https://github.com/henriforss/pixel-manipulation.
+
+Toivottavasti viihdyit tämän portfolion parissa. Nämä projektit ovat monilta osin yksinkertaisia, mutta toivon että siitä huolimatta onnistuin viestimään sen kaikista tärkeimmän, että olen monipuolinen, systemaattinen ja kykeneväinen ratkaisemaan erilaisia koodaustehtäviä.
+
+Ollaan yhteydessä!
+
+Terveisin,
+Henri

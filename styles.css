@@ -11,33 +11,33 @@ body {
   border: 0px solid black;
 }
 
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 3px;
-  padding: 10px 0;
+#title {
+  font-family: "Courgette", sans-serif;
+  font-size: 59px;
+  margin: 30px 0px 30px 4px;
+  color: #194725;
 }
 
-h3 {
-  font-family: Arial, Helvetica, sans-serif;
+#ingress {
+  font-family: "PT Serif", serif;
+  font-style: italic;
   margin-left: 3px;
+  padding: 0px 0px 15px 0px;
+  line-height: 130%;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "PT Serif", serif;
   margin-left: 3px;
   padding: 10px 0;
+  line-height: 130%;
 }
-
 
 iframe {
   display: block;
-  margin: auto;
+  margin: 10px auto;
   border: 0px dashed black;
   width: 350px;
-}
-
-#app1 {
-  height: 450px;
 }
 
 #app2 {
