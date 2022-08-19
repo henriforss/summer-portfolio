@@ -7,7 +7,7 @@
 body {
   display: block;
   margin: 20px auto;
-  width: 356px;
+  width: 354px;
   border: 0px solid black;
 }
 
@@ -21,9 +21,17 @@ body {
 #ingress {
   font-family: "PT Serif", serif;
   font-style: italic;
+  font-size: 18px;
   margin-left: 3px;
   padding: 0px 0px 15px 0px;
-  line-height: 130%;
+  line-height: 135%;
+}
+
+#date {
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-bottom: 20px;
+  margin-left: 2px;
 }
 
 img {
@@ -36,7 +44,7 @@ p {
   font-family: "PT Serif", serif;
   margin-left: 3px;
   padding: 10px 0;
-  line-height: 130%;
+  line-height: 135%;
 }
 
 iframe {
