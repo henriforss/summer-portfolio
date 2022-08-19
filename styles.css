@@ -14,7 +14,7 @@ body {
 #title {
   font-family: "Courgette", sans-serif;
   font-size: 50px;
-  margin: 30px 0px 30px 4px;
+  margin: 30px 0px 20px 4px;
   color: #194725;
 }
 
@@ -24,6 +24,12 @@ body {
   margin-left: 3px;
   padding: 0px 0px 15px 0px;
   line-height: 130%;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+
 }
 
 p {
