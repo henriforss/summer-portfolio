@@ -7,8 +7,15 @@
 body {
   display: block;
   margin: 20px auto;
-  width: 354px;
+  /* width: 354px; */
   border: 0px solid black;
+}
+
+.content-wrapper {
+  width: 600px;
+  margin: 0 auto;
+  /* padding: 0 10px; */
+  /* border: 1px solid red; */
 }
 
 #title {
@@ -37,7 +44,6 @@ body {
 img {
   display: block;
   margin: 10px auto;
-
 }
 
 p {
@@ -64,7 +70,6 @@ iframe {
 
 #app4 {
   height: 786px;
-  
 }
 
 #app5 {
@@ -73,4 +78,10 @@ iframe {
 
 #app6 {
   height: 470px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    width: 354px;
+  }
 }

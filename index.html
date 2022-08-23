@@ -12,74 +12,77 @@
   </head>
   <body>
 
-    <h1 id="title">Kesäportfolio</h1>
-    
-    <h3 id="ingress">Kesäkuun alussa 2022 haastoin itseni: asetin tavoitteeksi luoda datajournalistinen front-end portfolio elokuun loppuun mennessä. Olen työskennellyt 15 vuotta journalistiikan parissa ja tässä projektissa pääsin yhdistämään journalistisen osaamiseni koodausharrastukseeni.</h3>
+    <div class="content-wrapper">
 
-    <div id="date">Julkaistu: 8/2022.</div>
-    
-    <img width="350px" src="startpic-new.png">
-
-    <p>Helpottaakseni tehtävää päätin tietyistä rajauksista. Päätin keskittyä vain kaikista olennaisimpaan toimivuuteen ja siihen että työ valmistuu aikarajan sisällä. Rajauksen ulkopuolelle jäi siis monia tärkeitä asioita kuten saavutettavuus ja virheiden hallinta. Päätin projektin aikan myös rajata portfoliosivun leveyden 350 pikseliin, mikä näin jälkeenpäin ajateltuna oli täysin turhaa mutta juuri silloin helpotti asioita.</p>
-
-    <p>Portfolioon kuuluvat appit esitellään siinä järjestyksessä jossa ne on luotu. Ensimmäiset ovat aika yksinkertaisia, mutta loppua kohden vaikeustaso nousee. Noin henkilökohtaisesti olen aika tyytyväinen moniin niistä :)</p>
+      <h1 id="title">Kesäportfolio</h1>
+      
+      <h3 id="ingress">Kesäkuun alussa 2022 haastoin itseni: asetin tavoitteeksi luoda datajournalistinen front-end portfolio elokuun loppuun mennessä. Olen työskennellyt 15 vuotta journalistiikan parissa ja tässä projektissa pääsin yhdistämään journalistisen osaamiseni koodausharrastukseeni.</h3>
   
-    <div id="app"></div>
-
-    <p>Ensimmäinen appi on itselleni eräänlainen nostalgiatrippi. Urani ensimmäinen datajournalistinen tehtävä oli analysoida ylioppilaskoetuloksia Pythonilla. Myöhemmin päädyimme myös tilaamaan appin jolla lukija pystyi hakemaan uusia ylioppilaita nimen tai lukion perusteella. Se maksoi ainakin pari tonnia. Halusin kokeilla jos osaisin luoda sellaisen itse ja sehän olikin helppoa.</p>
-
-    <p>Appi on toteutettu Javascriptillä ja sen idea on pöllitty täältä: <a href="https://www.is.fi/kotimaa/art-2000008864277.html">https://www.is.fi/kotimaa/art-2000008864277.html</a> – anteeksi! Sen pääasiallinen toimivuus on lukea csv-tiedosto ja filtteröidä tietoa. Siinä esiintyvät nimet ja lukiot ovat keksittyjä.</p>
-
-    <p>Koodi ja README.md löytyvät täältä: <a href="https://github.com/henriforss/ylioppilaskokeet-app-js">https://github.com/henriforss/ylioppilaskokeet-app-js</a>.</p>
-    
-    <iframe id="app2" scrolling="no" src="http://calculator-mortgage.s3-website.eu-north-1.amazonaws.com/" title="Ylioppilaskokeet app"></iframe>
-
-    <p>Seuraava appi tuskin tarvitsee sen enempää esittelyä, kaikenlaiset laskurit ovat datajournalistiikan peruskauraa. Tämän kyseisin laskurin voisi yhdistää esimerkiksi asuntolainojen korkojen noususta kertovaan juttuun. Suurin osa aikuisista ihmisistä ovat joskus käyttäneet tämän tyyppistä appia ja siinä esitetty tieto on hyvinkin relevanttia.</p>
-
-    <p>Tässä appissa oleva lainamatematiikka on haettu netistä ja se on toteutettu HTML:n ja Javascriptin avulla. Appin koodi löytyy täältä: <a href="https://github.com/henriforss/mortgage-calculator">https://github.com/henriforss/mortgage-calculator</a>.</p>
-    
-    <iframe id="app3" scrolling="no" src="http://js-crime-graph.s3-website.eu-north-1.amazonaws.com/" title="Ylioppilaskokeet app"></iframe>
-
-    <p>Kun ensimmäiset kaksi appia olivat valmiita, halusin siirtyä johonkin muuhun. Ennen tätä olin tehnyt datan visualisointia vain Pythonilla. Nyt halusin kokeilla miten se tapahtuu Javascriptillä.</p>
-    
-    <p>Tämä appi oli alun perin osa eräänlaista mockup-datajournalistista artikkelia jossa tutkittiin rikosten uhreja rikoksen tyypin ja uhrin sukupuolen näkökulmasta. Uhritutkimus on kohtalaisen uusi alue kriminologiassa ja uhreista saatava tieto vähäistä. Esimerkiksi Tilastokeskuksella on kymmeniä tilastoja jotka koskevat rikosen tekijöitä, mutta vain yksi joka koskee uhreja, ja sekään ei ole täydellinen. Mockup-artikkeli ei kuitenkaan sopinut tähän yhteyteen, niin päätin jättää sen pois, tätä appia lukuun ottamatta.</p>
-    
-    <p>Muistatko vielä mitä vuonna 2020 tapahtui? Vastaus löytyy taulukoista.</p>
+      <div id="date">Julkaistu: 8/2022.</div>
+      
+      <img width="350px" src="startpic-new.png">
   
-    <p>Tässä työssä hyödynnetään Javascriptin Chart.js kirjastoa ja sen koodi löytyy täältä: <a href="https://github.com/henriforss/crime-graph">https://github.com/henriforss/crime-graph</a>.</p>
-    
+      <p>Helpottaakseni tehtävää päätin tietyistä rajauksista. Päätin keskittyä vain kaikista olennaisimpaan toimivuuteen ja siihen että työ valmistuu aikarajan sisällä. Rajauksen ulkopuolelle jäi siis monia tärkeitä asioita kuten saavutettavuus ja virheiden hallinta. Päätin projektin aikan myös rajata appien leveyden 350 pikseliin, jotta niitä voisi katsella mobiilinäytöltä.</p>
   
-    <iframe id="app4" scrolling="no" src="http://d3-finland-map-2.s3-website.eu-north-1.amazonaws.com/" title="Ylioppilaskokeet app"></iframe>
-
-    <p>Chart.js on kätevä kirjasto jos tavoitteena on luoda visualisointeja helposti. Niiden kustomointi onkin sitten vaikeampaa. Siksi päätinkin siirtyä suoraa päätä legendaarisen Mike Bostockin legendaariseen D3.js-kirjastoon joka on ziljoona kertaa parempi.</p>
-
-    <p>Yllä oleva kartta on tämän portfolion kehittynein appi. Sen tekemiseen meni kaikista pisin aika ja siihen liittyi paljon testailua ja viritystä. Appissa käytetty karttadata tulee Maanmittauslaitokselta, mutta sitä piti leikata ja käsitellä QGIS-ohjelmassa ennen kuin se soveltui tähän käyttöön. Karttadataan yhdistetty muu data tulee Tilastokeskukselta ja Kuntaliitolta.</p>
-
-    <p>Olen henkilökohtaisesti aika tyytyväinen tähän appiin. Siitä löytyy monenlaista toimintoa – zoomia, klikkiä, värikoodia – ja sitä voisi jatkokehittää monella eri tavalla. Koodi ei ole kaikin puolin kaunista, esimerkiksi jos katsoo miten tooltipin x- ja y-koordinaatit määritellään (huh!), mutta löytyy siitä joitain hienouksiakin (jee!).</p>
-
-    <p>Tämä appi on tosiaan toteutettu Javascriptin ja D3.js:n avulla ja sen koodi löytyy täältä: <a href="https://github.com/henriforss/d3-finland-map-2">https://github.com/henriforss/d3-finland-map-2</a>.</p>
+      <p>Portfolioon kuuluvat appit esitellään siinä järjestyksessä jossa ne on luotu. Ensimmäiset ovat aika yksinkertaisia, mutta loppua kohden vaikeustaso nousee. Noin henkilökohtaisesti olen aika tyytyväinen moniin niistä :)</p>
     
-    <iframe id="app5" scrolling="no" src="http://app-stock-market.s3-website.eu-north-1.amazonaws.com/" title="Ylioppilaskokeet app"></iframe>
-    
-    <p>Tykästyin D3.js-kirjastoon sen verran paljon, että halusin jatkaa sen parissa. Jotta seuraava projekti ei olisi täysin samanlainen kuin edellinen, päätin siirtyä Reactin pariin. Olen aikaisemmin koodaillut jonkin verran React-appeja ja ilokseni huomasin että D3.js toimii myös Reactissa kunhan vähän säätää.</p>
-
-    <p>Tämän appin pääasiallinen toimivuus on, että se hakee pörssidataa Nasdaqin Data Link API:sta, käsittelee sitä ja esittää sen D3.js:n avulla. Nasdaqin ilmainen data rajoittuu joihinkin amerikkalaisiin yhtiöihin ja kahteen kuukauteen vuonna 2017, ja se tekee tästä appista sisällöllisesti hieman tylsän, mutta ainakin kaikki toimii.</p>
-
-    <p>Tämän tyyppiset talousdatan visualisoinnit kuuluvat olennaisesti datajournalistiikkaan ja tätäkin voisi kehitää monella eri tavalla. Ikävä kyllä desktopin hieno mouseover-funktio ei toimi mobiilissa vaan muuttuu klikiksi. Koodi löytyy täältä: <a href="https://github.com/henriforss/stock-market-app">https://github.com/henriforss/stock-market-app</a>.</p>
-    
-    <iframe id="app6" scrolling="no" src="http://pixel-manipulation.s3-website.eu-north-1.amazonaws.com/" title="Ylioppilaskokeet app"></iframe>
-
-    <p>Tässä viimeisessä appissa halusin kokeilla HTML canvasta. Ajattelin että sen avulla voisi tehdä esimerkiksi animoituja otsikkoja tai muita elementtejä jonkin pidemmän reportaasin yhteyteen.</p>
-
-    <p>Tämän appin tekeminen oli tosi hauskaa. Siinä tehdään kaikenlaisia pieniä temppuja, jotta sen pyörittäminen mobiilissa olisi mahdollista, esimerkiksi vaihdetaan korkearesoluutioinen kuva heikompilaatuiseen siinä vaiheessa kun käyttäjä klikkaa kuvaa – resetti tuplaklikkaamalla. Lisäksi siinä käytetään Javascriptin luokkia, jotka olivat minulle uusi juttu – tuli ihan Python mieleen.</p>
-
-    <p>Myös animaation tekeminen oli hauskaa ja toivonkin että pääsen piakkoin palaamaan sen pariin – ja ehkä hieman nostamaan vaikeusastetta. Sanoiko joku WebGL? Koodi täältä: <a href="https://github.com/henriforss/pixel-manipulation">https://github.com/henriforss/pixel-manipulation</a>.</p>
-
-    <p>Toivottavasti viihdyit tämän portfolion parissa. Nämä projektit ovat monilta osin yksinkertaisia, mutta toivon että siitä huolimatta onnistuin viestimään sen kaikista tärkeimmän, että olen monipuolinen, systemaattinen ja kykeneväinen ratkaisemaan erilaisia koodaustehtäviä.</p>
-
-    <p>Ollaan yhteydessä!</p>
-
-    <p>Terveisin,<br>Henri</p>
+      <div id="app"></div>
   
+      <p>Ensimmäinen appi on itselleni eräänlainen nostalgiatrippi. Urani ensimmäinen datajournalistinen tehtävä oli analysoida ylioppilaskoetuloksia Pythonilla. Myöhemmin päädyimme myös tilaamaan appin jolla lukija pystyi hakemaan uusia ylioppilaita nimen tai lukion perusteella. Se maksoi ainakin pari tonnia. Halusin kokeilla jos osaisin luoda sellaisen itse ja sehän olikin helppoa.</p>
+  
+      <p>Appi on toteutettu Javascriptillä ja sen idea on pöllitty täältä: <a href="https://www.is.fi/kotimaa/art-2000008864277.html">https://www.is.fi/kotimaa/art-2000008864277.html</a> – anteeksi! Sen pääasiallinen toimivuus on lukea csv-tiedosto ja filtteröidä tietoa. Siinä esiintyvät nimet ja lukiot ovat keksittyjä.</p>
+  
+      <p>Koodi ja README.md löytyvät täältä: <a href="https://github.com/henriforss/ylioppilaskokeet-app-js">https://github.com/henriforss/ylioppilaskokeet-app-js</a>.</p>
+      
+      <iframe id="app2" scrolling="no" src="http://calculator-mortgage.s3-website.eu-north-1.amazonaws.com/" title="Ylioppilaskokeet app"></iframe>
+  
+      <p>Seuraava appi tuskin tarvitsee sen enempää esittelyä, kaikenlaiset laskurit ovat datajournalistiikan peruskauraa. Tämän kyseisin laskurin voisi yhdistää esimerkiksi asuntolainojen korkojen noususta kertovaan juttuun. Suurin osa aikuisista ihmisistä ovat joskus käyttäneet tämän tyyppistä appia ja siinä esitetty tieto on hyvinkin relevanttia.</p>
+  
+      <p>Tässä appissa oleva lainamatematiikka on haettu netistä ja se on toteutettu HTML:n ja Javascriptin avulla. Appin koodi löytyy täältä: <a href="https://github.com/henriforss/mortgage-calculator">https://github.com/henriforss/mortgage-calculator</a>.</p>
+      
+      <iframe id="app3" scrolling="no" src="http://js-crime-graph.s3-website.eu-north-1.amazonaws.com/" title="Ylioppilaskokeet app"></iframe>
+  
+      <p>Kun ensimmäiset kaksi appia olivat valmiita, halusin siirtyä johonkin muuhun. Ennen tätä olin tehnyt datan visualisointia vain Pythonilla. Nyt halusin kokeilla miten se tapahtuu Javascriptillä.</p>
+      
+      <p>Tämä appi oli alun perin osa eräänlaista mockup-datajournalistista artikkelia jossa tutkittiin rikosten uhreja rikoksen tyypin ja uhrin sukupuolen näkökulmasta. Uhritutkimus on kohtalaisen uusi alue kriminologiassa ja uhreista saatava tieto vähäistä. Esimerkiksi Tilastokeskuksella on kymmeniä tilastoja jotka koskevat rikosen tekijöitä, mutta vain yksi joka koskee uhreja, ja sekään ei ole täydellinen. Mockup-artikkeli ei kuitenkaan sopinut tähän yhteyteen, niin päätin jättää sen pois, tätä appia lukuun ottamatta.</p>
+      
+      <p>Muistatko vielä mitä vuonna 2020 tapahtui? Vastaus löytyy taulukoista.</p>
+    
+      <p>Tässä työssä hyödynnetään Javascriptin Chart.js kirjastoa ja sen koodi löytyy täältä: <a href="https://github.com/henriforss/crime-graph">https://github.com/henriforss/crime-graph</a>.</p>
+      
+      <iframe id="app4" scrolling="no" src="http://d3-finland-map-2.s3-website.eu-north-1.amazonaws.com/" title="Ylioppilaskokeet app"></iframe>
+  
+      <p>Chart.js on kätevä kirjasto jos tavoitteena on luoda visualisointeja helposti. Niiden kustomointi onkin sitten vaikeampaa. Siksi päätinkin siirtyä suoraa päätä legendaarisen Mike Bostockin legendaariseen D3.js-kirjastoon joka on ziljoona kertaa parempi.</p>
+  
+      <p>Yllä oleva kartta on tämän portfolion kehittynein appi. Sen tekemiseen meni kaikista pisin aika ja siihen liittyi paljon testailua ja viritystä. Appissa käytetty karttadata tulee Maanmittauslaitokselta, mutta sitä piti leikata ja käsitellä QGIS-ohjelmassa ennen kuin se soveltui tähän käyttöön. Karttadataan yhdistetty muu data tulee Tilastokeskukselta ja Kuntaliitolta.</p>
+  
+      <p>Olen henkilökohtaisesti aika tyytyväinen tähän appiin. Siitä löytyy monenlaista toimintoa – zoomia, klikkiä, värikoodia – ja sitä voisi jatkokehittää monella eri tavalla. Koodi ei ole kaikin puolin kaunista, esimerkiksi jos katsoo miten tooltipin x- ja y-koordinaatit määritellään (huh!), mutta löytyy siitä joitain hienouksiakin (jee!).</p>
+  
+      <p>Tämä appi on tosiaan toteutettu Javascriptin ja D3.js:n avulla ja sen koodi löytyy täältä: <a href="https://github.com/henriforss/d3-finland-map-2">https://github.com/henriforss/d3-finland-map-2</a>.</p>
+      
+      <iframe id="app5" scrolling="no" src="http://app-stock-market.s3-website.eu-north-1.amazonaws.com/" title="Ylioppilaskokeet app"></iframe>
+      
+      <p>Tykästyin D3.js-kirjastoon sen verran paljon, että halusin jatkaa sen parissa. Jotta seuraava projekti ei olisi täysin samanlainen kuin edellinen, päätin siirtyä Reactin pariin. Olen aikaisemmin koodaillut jonkin verran React-appeja ja ilokseni huomasin että D3.js toimii myös Reactissa kunhan vähän säätää.</p>
+  
+      <p>Tämän appin pääasiallinen toimivuus on, että se hakee pörssidataa Nasdaqin Data Link API:sta, käsittelee sitä ja esittää sen D3.js:n avulla. Nasdaqin ilmainen data rajoittuu joihinkin amerikkalaisiin yhtiöihin ja kahteen kuukauteen vuonna 2017, ja se tekee tästä appista sisällöllisesti hieman tylsän, mutta ainakin kaikki toimii.</p>
+  
+      <p>Tämän tyyppiset talousdatan visualisoinnit kuuluvat olennaisesti datajournalistiikkaan ja tätäkin voisi kehitää monella eri tavalla. Ikävä kyllä desktopin hieno mouseover-funktio ei toimi mobiilissa vaan muuttuu klikiksi. Koodi löytyy täältä: <a href="https://github.com/henriforss/stock-market-app">https://github.com/henriforss/stock-market-app</a>.</p>
+      
+      <iframe id="app6" scrolling="no" src="http://pixel-manipulation.s3-website.eu-north-1.amazonaws.com/" title="Ylioppilaskokeet app"></iframe>
+  
+      <p>Tässä viimeisessä appissa halusin kokeilla HTML canvasta. Ajattelin että sen avulla voisi tehdä esimerkiksi animoituja otsikkoja tai muita elementtejä jonkin pidemmän reportaasin yhteyteen.</p>
+  
+      <p>Tämän appin tekeminen oli tosi hauskaa. Siinä tehdään kaikenlaisia pieniä temppuja, jotta sen pyörittäminen mobiilissa olisi mahdollista, esimerkiksi vaihdetaan korkearesoluutioinen kuva heikompilaatuiseen siinä vaiheessa kun käyttäjä klikkaa kuvaa – resetti tuplaklikkaamalla. Lisäksi siinä käytetään Javascriptin luokkia, jotka olivat minulle uusi juttu – tuli ihan Python mieleen.</p>
+  
+      <p>Myös animaation tekeminen oli hauskaa ja toivonkin että pääsen piakkoin palaamaan sen pariin – ja ehkä hieman nostamaan vaikeusastetta. Sanoiko joku WebGL? Koodi täältä: <a href="https://github.com/henriforss/pixel-manipulation">https://github.com/henriforss/pixel-manipulation</a>.</p>
+  
+      <p>Toivottavasti viihdyit tämän portfolion parissa. Nämä projektit ovat monilta osin yksinkertaisia, mutta toivon että siitä huolimatta onnistuin viestimään sen kaikista tärkeimmän, että olen monipuolinen, systemaattinen ja kykeneväinen ratkaisemaan erilaisia koodaustehtäviä.</p>
+  
+      <p>Ollaan yhteydessä!</p>
+  
+      <p>Terveisin,<br>Henri</p>
+    
+    </div>
+
   </body>
 </html>
